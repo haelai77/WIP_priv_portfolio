@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: var(--primary-color);
+
+  --primary-color: #1A1A32;
+  --secondary-color: #9887ff;
+  --text-primary-dark: #FFFFFF;
+  --sidebar-width: 2.5rem;
+}
+
+.nav-gradient-anim{
+}
+
+.nav-gradient-anim::before, .nav-gradient-anim:after{
+  margin-left: var(--sidebar-width);
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #9887ff, #e84545);
+  background-size: 4rem 400%;
+  width: calc(100% + 0px);
+  height: calc(100% + 0px);
+  z-index: -1;
+
+  -webkit-animation: SideBarAnim 4s ease infinite;
+  -moz-animation: SideBarAnim 4s ease infinite;
+  animation: SideBarAnim 4s ease infinite;
+} 
+
+.nav-gradient-anim:after{
+  filter: blur(1rem);
+  opacity: 0.5;
+}
+
+.darkmode-sidebar-gradient {
+    background: linear-gradient(180deg, #9887ff, #e84545);
+    background-size: 2.5rem 400%;
+
+    -webkit-animation: SideBarAnim 4s ease infinite;
+    -moz-animation: SideBarAnim 4s ease infinite;
+    animation: SideBarAnim 4s ease infinite;
+}
+
+@-webkit-keyframes SideBarAnim {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes SideBarAnim {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes SideBarAnim {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    font-size:16px;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+#Navbar, main{
+  /* margin-left: var(--sidebar-width); */
+  margin-left: var(--sidebar-width);
+}
+
+p {
+  color: #FFFFFF;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+/* scroll bar */
+body::-webkit-scrollbar{
+ width: 0.25rem
+}
+
+body::-webkit-scrollbar-track{
+  background: var(--primary-color)
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--secondary-color)
+}

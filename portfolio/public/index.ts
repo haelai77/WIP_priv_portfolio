@@ -1,0 +1,7 @@
+export { default as About } from './About.svg'
+export { default as Email } from './Email.svg'
+export { default as Github } from './Github.svg'
+export { default as Linkedin } from './Linkedin.svg'
+export { default as Moon } from './Moon.svg'
+export { default as Sun } from './Sun.svg'
+export { default as Home } from './Home.svg'

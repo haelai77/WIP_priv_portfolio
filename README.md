@@ -1,2 +1,2 @@
 # priv_portfolio
-my portfolio website
+(practice website) - just brushing up on some react 

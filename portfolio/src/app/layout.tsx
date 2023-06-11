@@ -25,14 +25,11 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
     <html lang="en">
       <body>
 
-        <div className="fixed w-[calc(100%-var(--sidebar-width))]">
-          <Navbar />
-        </div>
+        <div className="fixed w-[calc(100%-var(--sidebar-width))] ml-[var(--sidebar-width)]"><Navbar /></div>
+        <div className="fixed"><Sidebar /></div>
 
-        <Sidebar />
-
-        <main className='px-[10rem] pt-[calc(4rem+6rem)]'>
-
+        <main className='px-[10rem] pt-[calc(4rem+6rem)] ml-[var(--sidebar-width)]'>
+          { children }
         </main>
       </body>
     </html>

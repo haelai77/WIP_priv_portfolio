@@ -22,13 +22,13 @@ export const metadata = {
 
 export default function RootLayout({children,}: {children: React.ReactNode}) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" >
+      <body suppressHydrationWarning={true}>
 
-        <div className="fixed w-[calc(100%-var(--sidebar-width))] ml-[var(--sidebar-width)]"><Navbar /></div>
-        <div className="fixed"><Sidebar /></div>
+        <div className="fixed w-[calc(100%-var(--sidebar-width))] ml-[var(--sidebar-width)] top-0"><Navbar /></div>
+        <div className="fixed top-0"><Sidebar /></div>
 
-        <main className='px-[10rem] pt-[calc(4rem+6rem)] ml-[var(--sidebar-width)]'>
+        <main className='ml-[3rem] mt-[4rem]'> {/* pt-[7rem] px-[7rem]*/}
           { children }
         </main>
       </body>

@@ -12,7 +12,7 @@ const Sidebar = () => (
 			</div>
 			<ul id="sidebar-icons" className='self-center m-auto space-y-3 pb-[10rem]'>
 				<li>
-					<Link href='/' className='tooltip tooltip-right tooltip' data-tip="Wanna go back home?">
+					<Link href='/' className='tooltip tooltip-right' data-tip="Wanna go back home?">
 						<Home fill="#1A1A32" width={32} height={32} className="justify-self-center" />
 					</Link>
 				</li>

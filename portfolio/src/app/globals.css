@@ -1,74 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   background-color: var(--primary-color);
-
   --primary-color: #1A1A32;
   --secondary-color: #9887ff;
   --text-primary-dark: #FFFFFF;
   --sidebar-width: 3rem;
 }
 
-.nav-gradient-anim::before, .nav-gradient-anim:after{
+.nav-gradient-anim::before, .nav-gradient-anim:after {
   background: linear-gradient(180deg, #9887ff, #e84545);
   background-size: 4rem 400%;
 }
 
-.sidebar-glow::before, .sidebar-glow:after{
+.sidebar-glow::before, .sidebar-glow:after {
   margin-top: 4rem;
   background: linear-gradient(180deg, #9887ff, #e84545);
   background-size: var(--sidebar-width) 400%;
 }
 
-.sidebar-glow::before, .sidebar-glow:after, .nav-gradient-anim::before, .nav-gradient-anim:after{
-
+.sidebar-glow::before, .sidebar-glow:after, .nav-gradient-anim::before, .nav-gradient-anim:after {
   content: "";
   position: absolute;
   left: 0px;
   top: 0px;
-  
   width: calc(100% + 0px);
   height: calc(100% + 0px);
   z-index: -1;
-
   -webkit-animation: SideBarAnim 4s ease infinite;
   -moz-animation: SideBarAnim 4s ease infinite;
   animation: SideBarAnim 4s ease infinite;
 }
 
-
-.nav-gradient-anim:after, .sidebar-glow:after{
+.nav-gradient-anim:after, .sidebar-glow:after {
   filter: blur(1rem);
   opacity: 0.5;
 }
 
 .darkmode-sidebar-gradient {
-    background: linear-gradient(180deg, #9887ff, #e84545);
-    background-size: 2.5rem 400%;
-
-    -webkit-animation: SideBarAnim 4s ease infinite;
-    -moz-animation: SideBarAnim 4s ease infinite;
-    animation: SideBarAnim 4s ease infinite;
+  background: linear-gradient(180deg, #9887ff, #e84545);
+  background-size: 2.5rem 400%;
+  -webkit-animation: SideBarAnim 4s ease infinite;
+  -moz-animation: SideBarAnim 4s ease infinite;
+  animation: SideBarAnim 4s ease infinite;
 }
 
 @-webkit-keyframes SideBarAnim {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
 }
 @-moz-keyframes SideBarAnim {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
 }
 @keyframes SideBarAnim {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
 }
-
 p {
   color: #FFFFFF;
 }
@@ -78,18 +88,91 @@ body {
 }
 
 /* scroll bar */
-body::-webkit-scrollbar{
- width: 0.25rem
+body::-webkit-scrollbar {
+  width: 0.25rem;
 }
 
-body::-webkit-scrollbar-track{
-  background: var(--primary-color)
+body::-webkit-scrollbar-track {
+  background: var(--primary-color);
 }
 
-body::-webkit-scrollbar-thumb{
-  background: var(--secondary-color)
+body::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
 }
 
+@keyframes wobb {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+}
+.wobble span {
+  animation-name: wobb;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1500ms;
+  display: inline-block;
+  transform: translateY(0px);
+}
+
+.arrow {
+  transform: translate(-50%, -50%);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-bottom: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+  transform: rotate(45deg);
+  animation: animateArrow 2.5s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.6s;
+}
+
+.arrow span:nth-child(4) {
+  animation-delay: -0.8s;
+}
+
+.arrow span:nth-child(5) {
+  animation-delay: -1s;
+}
+
+.arrow span:nth-child(6) {
+  animation-delay: -1.2s;
+}
+
+.arrow span:nth-child(7) {
+  animation-delay: -1.4s;
+}
+
+@keyframes animateArrow {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+}
 /* @media (prefers-color-scheme: dark) {
   :root {
     font-size:16px;
@@ -98,3 +181,5 @@ body::-webkit-scrollbar-thumb{
     --background-end-rgb: 0, 0, 0;
   }
 } */
+
+/*# sourceMappingURL=globals.css.map */

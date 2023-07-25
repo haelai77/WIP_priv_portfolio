@@ -22,7 +22,7 @@ const Sidebar = () => (
 					</Link>
 				</li>
 				<li>
-					<Link href='https://github.com/haelai77' className='tooltip tooltip-right' data-tip="Follow me on Github?">
+					<Link href='https://github.com/haelai77' className='tooltip tooltip-right animate-spin-slow hover:animate-none' data-tip="Follow me on Github?">
 						<Github fill="#1A1A32" width={32} height={32} className="justify-self-center" />
 					</Link>
 				</li>

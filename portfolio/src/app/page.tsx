@@ -85,9 +85,9 @@ export default function Home() {
 
 			
 			<p className="max-w-4xl mt-[1rem]">
-				I am a third-year computer science student pursuing an BSc at the <a className="text-secondaryLight underline" href="https://www.bristol.ac.uk/">TheUniversityOfBristol</a>.
+				I am a third-year computer science student pursuing an BSc at the <a className="text-secondaryLight underline" href="https://www.bristol.ac.uk/">The University Of Bristol</a>.
 				I've had hands-on experience with building web-apps and data analysis.
-				I'm currently going to UCL for data science and machine learning but will soon be looking forward to roles in AI/ML engineering, data science or software engineering.🚀
+				I'm currently going to <a className="text-secondaryLight underline" href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc">UCL</a> for data science and machine learning but will soon be looking forward to roles in AI/ML engineering, data science or software engineering.🚀
 			</p>
 
 			<div className="arrows-div mb-5  z-0">

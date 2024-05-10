@@ -35,5 +35,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [require("daisyui"), require('@tailwindcss/nesting')],
+  plugins: [require("daisyui")],
 }

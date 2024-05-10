@@ -5,7 +5,7 @@ module.exports = {
   },
 }
 
-// // postcss.config.js
+// postcss.config.js
 // module.exports = {
 //   plugins: {
 //     'postcss-import': {},

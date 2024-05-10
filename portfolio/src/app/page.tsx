@@ -3,7 +3,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { TimeGate } from "../../public";
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import React, { useRef, useEffect } from "react"
 import { Mesh } from 'three'
 import * as THREE from 'three'
@@ -86,8 +86,8 @@ export default function Home() {
 			
 			<p className="max-w-4xl mt-[1rem]">
 				I am a third-year computer science student pursuing an BSc at the <a className="text-secondaryLight underline" href="https://www.bristol.ac.uk/">The University Of Bristol</a>.
-				I've had hands-on experience with building web-apps and data analysis.
-				I'm currently going to <a className="text-secondaryLight underline" href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc">UCL</a> for data science and machine learning but will soon be looking forward to roles in AI/ML engineering, data science or software engineering.🚀
+				I&apos;ve had hands-on experience with building web-apps and data analysis.
+				I&apos;m currently going to <a className="text-secondaryLight underline" href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc">UCL</a> for data science and machine learning but will soon be looking forward to roles in AI/ML engineering, data science or software engineering.🚀
 			</p>
 
 			<div className="arrows-div mb-5  z-0">

@@ -137,6 +137,7 @@ body::-webkit-scrollbar-thumb {
   border-right: 3px solid var(--secondary-color);
   transform: rotate(45deg);
   animation: animateArrow 2.5s infinite;
+  z-index:-1;
 }
 
 {.arrow span:nth-child(2) {

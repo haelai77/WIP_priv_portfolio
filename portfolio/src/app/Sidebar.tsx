@@ -4,7 +4,7 @@ import { About, Email, Github, Home, Linkedin } from '../../public'
 
 const Sidebar = () => (
 
-	<div className="sidebar-glow">
+	<div className="sidebar-glow z-20">
 		<div id="Sidebar" className="flex flex-1 flex-col justify-center w-[var(--sidebar-width)] h-screen darkmode-sidebar-gradient">
 
 			<div className='mt-[5.5rem] tooltip tooltip-right cursor-pointer' data-tip="Hi there! this took a lot of effort to make so I hope you enjoy looking around!">

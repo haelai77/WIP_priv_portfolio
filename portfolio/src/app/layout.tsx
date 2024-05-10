@@ -7,23 +7,23 @@ import ModalLoading from './ModalLoading'
 import { useState } from 'react'
 
 //head
-export const metadata = {
-  title: "God of Procrastination's portfolio",
-  description: "Created by Leo Lai",
-  keywords: [
-      "Next.js",
-      "React",
-      "TypeScript"
-  ],
-  authors: [
-      {
-          name: "Leo Jack Lai",
-          url: "https://github.com/haelai77"
-      }
-  ],
-  creator: "Leo Jack Lai",
-  publisher: "Leo Jack Lai"
-}
+// export const metadata = {
+//   title: "God of Procrastination's portfolio",
+//   description: "Created by Leo Lai",
+//   keywords: [
+//       "Next.js",
+//       "React",
+//       "TypeScript"
+//   ],
+//   authors: [
+//       {
+//           name: "Leo Jack Lai",
+//           url: "https://github.com/haelai77"
+//       }
+//   ],
+//   creator: "Leo Jack Lai",
+//   publisher: "Leo Jack Lai"
+// }
 
 export default function RootLayout({children,}: {children: React.ReactNode}) { //ReactNode is a type that represents a React element, an array of React elements, or a string, number, or boolean
   const [homeLoaded, setHomeLoaded] = useState(false)

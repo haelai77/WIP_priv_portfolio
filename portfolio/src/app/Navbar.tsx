@@ -3,7 +3,7 @@ import LightSwitch from "./Switch"
 import Link from 'next/link'
 
 const Navbar = () => (
-  <div id="Navbar" className="navbar max-h-16 nav-gradient-anim bg-primary text-primary-content z-2">
+  <div id="Navbar" className="navbar max-h-16 nav-gradient-anim bg-primary text-primary-content z-20">
 
     <div className="m-auto space-x-6 rounded-lg whitespace-nowrap">
         <Link className="btn btn-ghost normal-case text-xl" href="/contact">Contact</Link>

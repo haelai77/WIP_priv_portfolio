@@ -24,17 +24,21 @@ export default function Home() {
 	return (
 		<div className="px-[5rem] pt-[2rem] flex flex-col select-none">
 			<p>Hi, my name is...</p>
+
+			{/* wobbling name */}
 			<h1 className="wobble text-5xl text-inherit py-[0.25rem] font-semibold ml-[-0.3srem] z-[0]">
 				Leo_Lai
 			</h1>
+
+			
 			<p className="max-w-4xl mt-[1rem]">
-				I am a third-year computer science student pursuing an MEng at the <a className="text-secondaryLight underline" href="https://www.bristol.ac.uk/">TheUniversityOfBristol</a>.
+				I am a third-year computer science student pursuing an BSc at the <a className="text-secondaryLight underline" href="https://www.bristol.ac.uk/">TheUniversityOfBristol</a>.
 				I've had hands-on experience with building web-apps and data analysis, now I'm excited about my future career options!
 				I'm currently looking forward to roles in AI/ML engineering, data science or software engineering.🚀
 			</p>
 
-			<div className="ml-[1rem] pb-[1.5rem]">
-				<div className="arrow">
+			<div className="arrows-div mb-5">
+				<div className="arrow ">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -45,13 +49,12 @@ export default function Home() {
 				</div>
 			</div>
 
-			<p>Check out my...</p>
-
 			<h1 className="text-5xl text-inherit my-[0.7rem] font-semibold ml-[-0.3srem]">
 				Skills & Projects
 			</h1>
 
-			<div className="carousel w-[20rem] py-[1rem] rounded bg-white">
+{/* carousel looks bad */}
+			{/* <div className="carousel w-[20rem] py-[1rem] rounded bg-white">
 				<div id="slide1" className="carousel-item relative w-full">
 					<img src={TimeGate.src} className="w-full"/>
 					<div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -67,7 +70,7 @@ export default function Home() {
 					</div>
 				</div>
 
-			</div>
+			</div> */}
 		</div>
 	)
 }

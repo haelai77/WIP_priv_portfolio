@@ -10,7 +10,7 @@ const Sidebar = () => (
 			<div className='mt-[5.5rem] tooltip tooltip-right cursor-pointer' data-tip="Hi there! this took a lot of effort to make so I hope you enjoy looking around!">
 				<div className='-rotate-90 text-[#1A1A32] text-2xl font-bold font-[sans-serif]'>&lt;LeoLai/&gt;</div>
 			</div>
-			<ul id="sidebar-icons" className='self-center m-auto space-y-3 pb-[10rem]'>
+			<ul id="sidebar-icons" className='self-center m-auto space-y-8 pb-[10rem]'>
 				<li>
 					<Link href='/' className='tooltip tooltip-right' data-tip="Wanna go back home?">
 						<Home fill="#1A1A32" width={32} height={32} className="justify-self-center" />

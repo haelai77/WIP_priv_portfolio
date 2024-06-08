@@ -45,7 +45,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) { /
         <main className='ml-[3rem] mt-[4rem] h-[calc(100vh-4rem)] w-[calc(100vw-var(--sidebar-width))]'> {/* pt-[7rem] px-[7rem]*/}
 
           <ModalLoading homeLoaded={homeLoaded} modalTitle={modalTitle} msg={msg} link={link}/>
-           <div className='w-full h-full text-white' onLoad={handelHomeLoad}>
+           <div className='w-full h-full text-white overflow-x-hidden' onLoad={handelHomeLoad}>
             { children }
           </div>
           
